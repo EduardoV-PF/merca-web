@@ -1,0 +1,327 @@
+.productos-in{
+    width: 100%;
+    padding: 60px;
+    background: #f8fafc;
+}
+
+.productos-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.productos-header h2{
+    font-size: 36px;
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.productos-header p{
+    font-size: 18px;
+    color: #64748b;
+}
+
+.productos-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+
+    width: 100%;
+}
+
+.producto-card{
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+    display: flex;
+    flex-direction: column;
+
+    transition: .3s;
+}
+
+.producto-card:hover{
+    transform: translateY(-5px);
+}
+
+.producto-img{
+    height: 220px;
+
+    background: #eef2f7;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #64748b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.producto-marca{
+    margin-top: 15px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.producto-nombre{
+    margin-top: 10px;
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.producto-precio{
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #dc2626;
+}
+
+.btn-carrito{
+    margin-top: auto;
+
+    border: none;
+
+    background: linear-gradient(to top, #0066c4, #00b8b0);
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-carrito:hover{
+    background: #16a34a;
+}
+
+/* TABLET */
+
+@media (max-width: 1200px){
+
+    .productos-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+/* MOVIL */
+
+@media (max-width: 768px) {
+
+    .productos-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .productos-header h2 {
+        font-size: 28px;
+    }
+
+}
+
+.ver-todos-productos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.btn-vermas {
+    background: #0066c4;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-vermas:hover {
+    background: #004da3;
+}
+
+
+.btn-vermas{
+
+    background:#0066c4;
+    color:white;
+
+    border:none;
+
+    padding:16px 40px;
+
+    border-radius:40px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+
+.btn-vermas:hover{
+    background:#004da3;
+}
+
+.productos-in{
+    max-width:none;
+}
+
+.categorias-home{
+    margin-top:80px;
+}
+
+.categorias-home h2{
+    font-size:32px;
+    color:#172554;
+    margin-bottom:40px;
+}
+
+
+.categorias-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(8,1fr);
+    gap:20px;
+    width:100%;
+}
+
+.categoria-item{
+
+    text-align:center;
+}
+
+.categoria-icono{
+
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    background: #e6ddff;
+
+    margin:0 auto 15px auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:bold;
+}
+.categoria-item p{
+
+    font-size:18px;
+    color:#374151;
+}
+
+@media(max-width:1200px){
+
+   .categorias-grid{
+      grid-template-columns:
+      repeat(4,1fr);
+   }
+
+}
+
+@media(max-width:768px){
+
+   .categorias-grid{
+      grid-template-columns:
+      repeat(2,1fr);
+   }
+
+}
+
+.tendencias-home{
+    margin-top: 80px;
+}
+.tendencias-home h2{
+    font-size: 32px;
+    color: #172554;
+    margin-bottom: 35px;
+}
+.tendencias-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.tendencia-banner{
+
+    height: 260px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:20px;
+    font-weight:bold;
+
+    color:#64748b;
+
+    transition:.3s;
+}
+
+.tendencia-banner:hover{
+
+    transform: translateY(-5px);
+
+}
+.tendencia-banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+@media(max-width:1200px){
+
+    .tendencias-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .tendencias-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Imágenes de los productos */
+.producto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+/* Imágenes de las categorías */
+.categoria-icono img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    padding: 15px;
+}

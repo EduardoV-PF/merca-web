@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f7f8fa;
+}
+
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+    background: linear-gradient(to top, #0066c4, #00b8b0);
+    border: none;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f2f8fa;
+}
+
+.login-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/*_____________________________________________________________*/
+
+/* =========================================
+   HERO / CARRUSEL
+   ========================================= */
+
+.hero {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 0;
+}
+
+.hero-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.hero-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-width: 100%;
+}
+
+
+/* =========================================
+   SLIDE 1 - BANNER PRINCIPAL
+   ========================================= */
+
+.hero-principal {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+
+    background-image: url("./assets/supemarttt.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.hero-principal::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 1;
+}
+
+.hero-text {
+    position: absolute;
+
+    top: 55px;
+    left: 6%;
+
+    width: 55%;
+
+    color: #f2f4f7;
+
+    text-align: left;
+
+    z-index: 2;
+}
+
+.hero-text h1 {
+    margin: 0 0 25px 0;
+
+    font-size: 60px;
+    line-height: 1.2;
+
+    max-width: 700px;
+
+    text-align: left;
+}
+
+.hero-text p {
+    margin: 0 0 30px 0;
+
+    font-size: 22px;
+
+    color: #f8f9fa;
+
+    text-align: left;
+}
+
+.hero-btn {
+    background: #38bdf8;
+    color: #08142c;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* =========================================
+   SLIDES DE PROMOCIONES
+   ========================================= */
+
+.promo-slide {
+
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-width: 100%;
+}
+
+.promo-slide img {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+
+    display: block;
+}
+
+
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0,0,0,.4);
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 999;
+}
+
+.left{
+    left: 15px;
+}
+
+.right{
+    right: 15px;
+}
+
+.arrow:hover{
+    background: rgba(0,0,0,.7);
+}
+
+/* =========================================
+   INDICADORES
+   ========================================= */
+
+.indicadores {
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    z-index: 20;
+}
+
+
+.indicadores span {
+    width: 10px;
+    height: 10px;
+
+    background: #d1d5db;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.indicadores span.activo {
+    width: 28px;
+    height: 10px;
+
+    border-radius: 10px;
+
+    background: #38bdf8;
+}
+
+/*__________________________________________________________ */
+
+.modules {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 0;
+    padding: 60px;
+    background: #fdfdfd;
+}
+
+.module-card {
+    background: #172554;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid #38bdf8;
+}
+
+
+.social-section {
+    padding: 10px;
+    text-align: center;
+    background: #f8fafc;
+    color: white;
+}
+
+.social-section h2 {
+    margin-bottom: 25px;
+     color: #0c4e6b;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    background: #172554;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: #38bdf8;
+    color: #08142c;
+}
+
+
+footer {
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    background: #08142c;
+}
+
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    color: #cbd5e1;
+}
+
+.footer-column p svg {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #29466e;
+    text-align: center;
+    color: #94a3b8;
+}
+
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    color: #f2f8fa;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #f2f8fa;
+}
+
+.logo-img {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    margin-right: -30px;
+}
+
+.login-icon {
+    font-size: 40px;
+    color: #e3edf1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-icon:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+.cart-icon {
+    font-size: 38px;
+    color: #e3edf1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-icon:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+.side-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+    width: 320px;
+    max-height: calc(100vh - 80px);
+
+    background: #0d1f3b;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+
+    padding: 20px 0;
+
+    overflow-y: auto;
+
+    z-index: 100;
+}
+
+.side-menu-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 25px;
+    margin-bottom: 10px;
+
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+
+    border-bottom: 1px solid #29466e;
+}
+
+.side-menu button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 13px 25px;
+
+    border: none;
+    background: transparent;
+
+    color: #e3edf1;
+
+    font-size: 16px;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.side-menu button svg {
+    font-size: 22px;
+}
+
+.side-menu button:hover {
+    background: #1d4ed8;
+    color: white;
+    padding-left: 30px;
+}
+
